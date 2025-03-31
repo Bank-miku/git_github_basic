@@ -53,7 +53,10 @@ git push -u origin main
 +if have error on remote add 
 git remote remove origin
 
-//git pukk (remote repository -> local repository)
+//git pull (remote repository -> local repository)
+git pull
+
+
 ---------------------------------------------------------------------------------
 
 ----------------------git basic commard -----------------------------------------

@@ -46,7 +46,14 @@ git reset --potion <commit_id>
         ->hard  (delete all version until version that you want to use)
 
 //git push (local repository -> remote repository or server)
+git branch -M main
+git remote add origin https://github.com/Bank-miku/git_github_basic.git
+git push -u origin main
 
++if have error on remote add 
+git remote remove origin
+
+//git pukk (remote repository -> local repository)
 ---------------------------------------------------------------------------------
 
 ----------------------git basic commard -----------------------------------------

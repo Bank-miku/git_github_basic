@@ -1,0 +1,14 @@
+Develope of version control
+1. copy file & folder
+2. Patch
+3. Local Version Control Systems: These systems store changes locally in files 
+as hotfixes or patches before being pushed to a single version of code in a database.
+
+4. Centralized Version Control Systems (CVCS): These systems host different versions 
+of the code in a centralized repository. Users can access these versions and push or 
+pull changes as needed.
+
+5. Distributed Version Control Systems (DVCS): These systems contain multiple repositories.
+Each user has their own repository and working copy. Changes are committed locally and 
+then pushed to a central repository. Git and Mercurial are popular examples of DVCS.
+Git is also DVCS

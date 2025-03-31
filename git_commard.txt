@@ -1,0 +1,76 @@
+//commard
++ check git version : git --version
++ clear all commard : clear
+
+//set email and name
+git config --global user.email "github email"
+git config --global user.name "username"
+
+
+--------------------git workfall ------------------------------------------------
+//git init (untracked folder -> tracked folder)
+it is used to check file or folder where have been changed
+
++ create local repository
+git init
+
+//git add 
+use for keep changing data (how change, what time, etc) to staging area
+
++add folder -> staging area
+git add <file_name1> <file_name2> ...   (add file_name1 and file_name2)
+git add *.html *.js etc                 (add all files that is html file)
+git add .                               (add all files that in directory)
+
++remove file or folder from staging area
+git reset <file_name1>                      (for remove file_name1 out of staging area)
+git rm -r --cached .                        (remove all file or folde in staging area)
+git rm --cached <file_name1> <file_name2>   (remove file_name1 and file_name2 from staging area)
+
+
+
+//git commnit (folder -> local repository)
+git commit -m "log Message"
+git log
+git log --oneline       (show commit log)
+git log --graph         
+
++cancle edit file
+git checkout <file_name1>                   (return file to a before version file)
+
++git reset (undo version commit id)
+git reset --potion <commit_id>
+    -> option 
+        ->soft
+        ->mix   
+        ->hard  (delete all version until version that you want to use)
+
+//git push (local repository -> remote repository or server)
+
+---------------------------------------------------------------------------------
+
+----------------------git basic commard -----------------------------------------
++create file
+touch <file_name1>
+
++compare version
+git diff <commit_id>                    ()
+git diff <commit_id1> <commit_id2>      (compare commit_id1(original version) and commit_id2(updated version) what is different)
+    -> (-) mean code have been removed from original code
+    -> (+) mean code that have been added on original code
+
+--------------------------------------------------------------------------------
+
+------------------------git branch ---------------------------------------------
+
++git branch (show all branch in project)
+
++git checkout 
+git checkout -b <file_name1>            (make and switch to new branch)
+git checkout <file_name1>               (change to another branch)
+
++delete branch
+git branch -d <branch_name>             (delete branch)
+
++merge 2 branch in one branch
+git merge <branch_name>                 (merge head master with branch_name)
